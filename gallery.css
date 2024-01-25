@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.main{
+    min-height: 100%;
+    width: 100%;
+    background-color: #090909;
+    position: relative;
+    z-index: 8;
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff
+}
+.left-nav h4{
+    font-size: 1.3vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-left: 25px;
+    cursor: pointer;
+
+}
+.left-nav a{
+     text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 100;
+
+}
+.right-nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+.right-nav h4{
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+.right-nav a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.gallery {
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery .row1 {
+  width: 100%;
+  position: relative;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-evenly;
+  z-index: 9;
+}
+
+
+img{
+  width: calc(25% - 25px); /* Adjusted width for responsiveness and gap */
+  height: auto;
+  max-height:500px;
+  border: 1px solid #dadada59;
+  object-fit: cover;
+  margin-bottom: 25px; /* Added margin to create gap between rows */
+}
+
+
+
+.gallery .row2{
+  width: 100%;
+  position: relative;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+.gallery .row3{
+  width: 100%;
+  position: relative;
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+.row4{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+}
+
+.row4 img{
+  width: 45%;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+.head{
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 10px;
+        cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .left-nav h4,
+  .left-nav a,
+  .right-nav a,
+  .right-nav h4 {
+    font-size: 2vw;
+    width: 100%;
+    padding: 1vw; /* Adjusted font size for smaller screens */
+  }
+  .right-nav{
+    width: 50%;
+  }
+    .head{
+        font-size: 4vw;
+    }
+}
